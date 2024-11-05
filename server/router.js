@@ -12,4 +12,5 @@ const router = (app) => {
   app.get('/', controllers.Account.loginPage);
 };
 
+// export
 module.exports = router;
