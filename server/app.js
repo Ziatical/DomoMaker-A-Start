@@ -7,6 +7,9 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const expressHandlebars = require('express-handlebars');
 const helmet = require('helmet');
+// DOMO B
+const session = require('express-session');
+//end
 
 const router = require('./router.js');
 
@@ -29,6 +32,16 @@ app.use(favicon(`${__dirname}/../hosted/img/favicon.png`));
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+//DOMO B
+app.use(session({
+  key: 'sessionid',
+  secret: 'Domo Arigato',
+  resave: false,
+  saveUninitialized: false,
+}));
+//end
+
 app.engine('handlebars', expressHandlebars.engine({ defaultLayout: '' }));
 app.set('view engine', 'handlebars');
 app.set('views', `${__dirname}/../views`);
