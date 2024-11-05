@@ -19,7 +19,7 @@
     "Login"
   ],
   "author": "Cody Van De Mark / Austin Willoughby",
-  "license": "Apache 2.0",
+  "license": "UNLICENSED",
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -41,5 +41,13 @@
     "redis": "^4.6.13",
     "serve-favicon": "^2.5.0",
     "underscore": "^1.13.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ziatical/DomoMaker-A-Start.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ziatical/DomoMaker-A-Start/issues"
+  },
+  "homepage": "https://github.com/Ziatical/DomoMaker-A-Start#readme"
 }
